@@ -1,0 +1,26 @@
+@keyframes spin {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.5);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  .loading-pokemon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for centering */
+  }
+  
+  .loading-pokemon img {
+    animation: spin 2s infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+  }
